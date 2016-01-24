@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<manifest>
+
+  <remote name="sony"
+          fetch="git://github.com/sonyxperiadev/" />
+
+  <include name="base-m-cm.xml"/>
+
+  <!-- Sony platform specific things -->
+  <project name="android_kernel_sony_msm" path="kernel/sony/msm" remote="CyanogenMod" revision="cm-13.0"/>
+  <project name="macaddrsetup" path="hardware/sony/macaddrsetup" remote="sony" revision="master"/>
+  <project name="thermanager" path="hardware/sony/thermanager" remote="sony" revision="master"/>
+  <project name="timekeep" path="hardware/sony/timekeep" remote="b2g" revision="master"/>
+
+  <!-- Yukon platform specific things -->
+  <project name="android_device_sony_common" path="device/sony/common" remote="CyanogenMod" revision="cm-13.0"/>
+  <project name="android_device_sony_yukon" path="device/sony/yukon" remote="CyanogenMod" revision="cm-13.0"/>
+  <project name="android_device_sony_tianchi" path="device/sony/tianchi" remote="CyanogenMod" revision="cm-13.0"/>
+  <project name="android_device_sony_flamingo" path="device/sony/flamingo" remote="CyanogenMod" revision="cm-13.0"/>
+
+</manifest>
