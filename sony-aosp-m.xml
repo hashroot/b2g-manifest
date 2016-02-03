@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<manifest>
+
+  <include name="base-m-aosp.xml"/>
+
+  <remote name="sony" fetch="git://github.com/sonyxperiadev/" />
+  <remote name="cm" fetch="git://github.com/CyanogenMod/" />
+
+  <default remote="caf" revision="refs/tags/android-6.0.1_r13" sync-j="4"/>
+
+  <!-- Platform common things -->
+  <project name="platform/external/libnfc-nci"       path="external/libnfc-nci" />
+  <project name="platform/external/libxml2"          path="external/libxml2"/>
+  <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8"/>
+
+  <project name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" />
+  <project name="platform/hardware/broadcom/wlan"  path="hardware/broadcom/wlan"/>
+
+  <project name="platform/hardware/qcom/audio"   path="hardware/qcom/audio"/>
+  <project name="platform/hardware/qcom/bt"      path="hardware/qcom/bt" />
+  <project name="camera"                         path="hardware/qcom/camera" remote="sony" revision="aosp/LA.BF64.1.2.2_rb4.7" />
+  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" />
+  <project name="platform/hardware/qcom/gps"     path="hardware/qcom/gps"/>
+  <project name="platform/hardware/qcom/media"   path="hardware/qcom/media"/>
+  <project name="platform/hardware/qcom/wlan"    path="hardware/qcom/wlan"/>
+  <project name="platform/hardware/ril"          path="hardware/ril"/>
+
+  <project name="platform_system_nfcd" path="system/nfcd" remote="b2g" revision="master"/>
+
+  <!-- Sony platform specific things -->
+  <project name="android_external_busybox" path="external/busybox" remote="cm" revision="cm-13.0"/>
+
+  <project name="init_sh"       path="hardware/sony/init_sh"       remote="b2g"  revision="sony-aosp-l"/>
+  <project name="macaddrsetup"  path="hardware/sony/macaddrsetup"  remote="sony" revision="master"/>
+  <project name="mkqcdtbootimg" path="hardware/sony/mkqcdtbootimg" remote="sony" revision="master"/>
+  <project name="thermanager"   path="hardware/sony/thermanager"   remote="sony" revision="master"/>
+  <project name="timekeep"      path="hardware/sony/timekeep"      remote="b2g"  revision="master"/>
+
+  <project name="kernel" path="kernel/sony/msm" remote="sony" revision="aosp/LA.BF64.1.2.2_rb4.7"/>
+
+  <project name="vendor-qcom-opensource-dataservices" path="vendor/qcom/opensource/dataservices" remote="sony" revision="master" />
+
+  <!-- Shinano platform specific things -->
+  <project name="device-qcom-sepolicy" path="device/qcom/sepolicy" remote="sony" revision="master"/>
+  <project name="device-sony-common"   path="device/sony/common"   remote="sony" revision="master"/>
+  <project name="device-sony-shinano"  path="device/sony/shinano"  remote="sony" revision="master"/>
+  <project name="device-sony-sirius"   path="device/sony/sirius"   remote="sony" revision="master"/>
+
+</manifest>
