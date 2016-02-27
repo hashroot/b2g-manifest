@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<manifest>
+
+  <include name="base-l-cm.xml"/>
+
+  <project path="device/xiaomi/ferrari" name="android_device_xiaomi_ferrari" remote="dh-harald" />
+  <project path="external/mm-dash" name="CyanogenMod/android_external_mm-dash" remote="GitHub" />
+
+  <project path="kernel/xiaomi/ferrari" name="ferrari-dev/android_kernel_xiaomi_ferrari.git" remote="GitHub" revision="LA.BR.1.1.3-06510-8x16.0" />
+
+  <project path="vendor/xiaomi/ferrari" name="ferrari-dev/proprietary_vendor_xiaomi_ferrari.git" remote="GitHub" revision="cm-12.1"/>
+
+</manifest>
